@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dibujo original (vector) para la app de sonidos -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="100" android:viewportHeight="100">
+    <path android:pathData="M45,12 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 Z"
+        android:strokeColor="#8D6E00"
+        android:strokeWidth="3"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+    <path android:fillColor="#FFC107"
+        android:pathData="M50,16 C30,16 28,38 26,58 C24,70 14,72 12,78 L88,78 C86,72 76,70 74,58 C72,38 70,16 50,16 Z"
+        android:strokeColor="#B07A00"
+        android:strokeWidth="2.5"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+    <path android:pathData="M38,26 C33,34 32,48 31,60"
+        android:strokeColor="#FFF3C4"
+        android:strokeWidth="3"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+    <path android:fillColor="#E0A800"
+        android:pathData="M12,76 h76 v5 h-76 Z"
+        android:strokeColor="#B07A00"
+        android:strokeWidth="1.5"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+    <path android:fillColor="#8D6E00"
+        android:pathData="M44,87 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 Z"
+        android:strokeColor="#5D4800"
+        android:strokeWidth="1.5"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+</vector>

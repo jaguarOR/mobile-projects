@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dibujo original (vector) para la tarea Sr. Cara de Papa -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="100" android:viewportHeight="100">
+    <path android:fillColor="#4E2A12" android:strokeColor="#2B1608" android:strokeWidth="2" android:strokeLineJoin="round"
+        android:pathData="M8,84 C20,66 80,66 92,84 L90,58 L80,70 L78,34 L66,60 L58,16 L50,56 L40,22 L34,60 L22,36 L20,70 L10,56 Z"/>
+    <path android:strokeColor="#7A4A26" android:strokeWidth="2" android:strokeLineCap="round"
+        android:pathData="M40,40 L44,58 M58,32 L56,56 M72,48 L68,62 M26,52 L30,64"/>
+</vector>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dibujo original (vector) para la app de sonidos -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="100" android:viewportHeight="100">
+    <group android:rotation="-28" android:pivotX="50" android:pivotY="50" android:scaleX="0.92" android:scaleY="0.92">
+        <path android:fillColor="#6D4C41"
+            android:pathData="M45.5,4 h9 v46 h-9 Z"
+            android:strokeColor="#3E2723"
+            android:strokeWidth="1.2"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round"/>
+        <path android:fillColor="#4E342E"
+            android:pathData="M43,1 h14 v11 h-14 Z"
+            android:strokeColor="#3E2723"
+            android:strokeWidth="1.2"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round"/>
+        <path android:fillColor="#E39B3D"
+            android:pathData="M50,34 C40,34 34,40 35,48 C36,54 40,56 38,60 C30,64 26,70 27,78 C28,90 40,97 50,97 C60,97 72,90 73,78 C74,70 70,64 62,60 C60,56 64,54 65,48 C66,40 60,34 50,34 Z"
+            android:strokeColor="#8A4B12"
+            android:strokeWidth="2"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round"/>
+        <path android:fillColor="#2B1608"
+            android:pathData="M44,60 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 Z"/>
+        <path android:fillColor="#3E2723"
+            android:pathData="M41,82 h18 v4 h-18 Z"/>
+        <path android:pathData="M47,8 L47,84 M49,8 L49,84 M51,8 L51,84 M53,8 L53,84"
+            android:strokeColor="#ECEFF1"
+            android:strokeWidth="0.6"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round"/>
+    </group>
+</vector>

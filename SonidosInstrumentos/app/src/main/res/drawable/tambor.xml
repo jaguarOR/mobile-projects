@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dibujo original (vector) para la app de sonidos -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="100" android:viewportHeight="100">
+    <path android:fillColor="#000000"
+        android:pathData="M10,22 L44,40 M90,22 L56,40"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="4"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+    <path android:fillColor="#EFEBE9"
+        android:pathData="M5.5,21 a3.5,3.5 0 1,0 7.0,0 a3.5,3.5 0 1,0 -7.0,0 Z"
+        android:strokeColor="#5D4037"
+        android:strokeWidth="1.2"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+    <path android:fillColor="#EFEBE9"
+        android:pathData="M87.5,21 a3.5,3.5 0 1,0 7.0,0 a3.5,3.5 0 1,0 -7.0,0 Z"
+        android:strokeColor="#5D4037"
+        android:strokeWidth="1.2"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+    <path android:fillColor="#D32F2F"
+        android:pathData="M16,46 L16,80 A34,11 0 0,0 84,80 L84,46 Z"
+        android:strokeColor="#7F1515"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+    <path android:pathData="M16,46 L28,84 L40,56 L50,91 L60,56 L72,84 L84,46"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.8"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+    <path android:fillColor="#FFF8E1"
+        android:pathData="M16,46 a34,11 0 1,0 68,0 a34,11 0 1,0 -68,0 Z"
+        android:strokeColor="#7F1515"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+    <path android:pathData="M16,80 A34,11 0 0,0 84,80"
+        android:strokeColor="#FFC107"
+        android:strokeWidth="3"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+</vector>

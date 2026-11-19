@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+}
+
+// El nombre del alumno se lee de local.properties (no se sube a git): alumno.nombre=Tu Nombre
+def localProps = new Properties()
+def localFile = rootProject.file('local.properties')
+if (localFile.exists()) {
+    localFile.withReader('UTF-8') { localProps.load(it) }
+}
+def alumno = localProps.getProperty('alumno.nombre', 'Tu nombre')
+
+android {
+    namespace 'com.example.papa'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.papa"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+        buildConfigField "String", "ALUMNO", "\"${alumno}\""
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+}
