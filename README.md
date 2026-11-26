@@ -9,7 +9,7 @@ Aplicaciones Android en Java de la materia Programación Móvil 1 (Ingeniería e
 | [`Galeria/`](Galeria/) | Galería de 4 imágenes con título sobre cada imagen, botones Anterior/Siguiente, contador y pantalla de créditos |
 | [`CaraDePapa/`](CaraDePapa/) | Sr. Cara de Papa: arrastrar pelo, ojos, nariz, boca y pies al cuerpo (drag and drop con `Spinner`) y calificar de 0 a 10 qué tan cerca quedó cada pieza de su posición correcta. La lógica está en `Calificador.java` y tiene pruebas JUnit |
 | [`SonidosInstrumentos/`](SonidosInstrumentos/) | Reproductor de sonidos con `MediaPlayer`: 4 instrumentos (piano, campana, tambor, guitarra) en `ImageButton` y el nombre del autor en la pantalla principal. Los sonidos se generan por síntesis con `herramientas/generar_sonidos.py` y las imágenes son vectores propios |
-| [`Memorama/`](Memorama/) | **Proyecto final.** Memorama de 6 pares con sonidos (voltear, acierto, error, victoria), marcador de intentos y botón Reiniciar. La lógica está en `Memorama.java` y tiene pruebas JUnit. Se compila en la nube con GitHub Actions ([`memorama.yml`](.github/workflows/memorama.yml)); ver su README |
+| [`Memorama/`](Memorama/) | **Proyecto final** (con Oscar Daniel García Saavedra). Memorama de 6 pares con sonidos (voltear, acierto, error, victoria), marcador de intentos y botón Reiniciar. La lógica está en `Memorama.java` y tiene pruebas JUnit. Se compila en la nube con GitHub Actions ([`memorama.yml`](.github/workflows/memorama.yml)); ver su README |
 
 ## Compilar
 

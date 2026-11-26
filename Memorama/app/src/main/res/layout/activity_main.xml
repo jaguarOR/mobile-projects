@@ -50,11 +50,25 @@
         android:textColor="#333333"
         android:layout_marginTop="12dp"/>
 
-    <Button
-        android:id="@+id/btnReiniciar"
+    <!-- Botones de abajo, uno junto al otro -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reiniciar"
-        android:layout_marginTop="12dp"/>
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnReiniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar"
+            android:layout_marginEnd="12dp"/>
+
+        <Button
+            android:id="@+id/btnCreditos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créditos"/>
+    </LinearLayout>
 
 </LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.memorama;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -49,6 +50,11 @@ public class MainActivity extends Activity {
 
         Button btnReiniciar = findViewById(R.id.btnReiniciar);
         btnReiniciar.setOnClickListener(v -> nuevoJuego());
+
+        // Abre la pantalla de creditos con un Intent (como en la Galeria)
+        Button btnCreditos = findViewById(R.id.btnCreditos);
+        btnCreditos.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, CreditosActivity.class)));
 
         crearTablero();
         nuevoJuego();

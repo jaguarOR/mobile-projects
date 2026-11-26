@@ -1,6 +1,8 @@
 # Memorama con sonidos
 
-Autor: **Ezequiel Olivera Reyes**, Ingeniería en Computación, UNAM FES Aragón. Proyecto final de Programación Móvil 1.
+Autores: **OSCAR DANIEL GARCIA SAAVEDRA** y **OLIVERA REYES EZEQUIEL**, Ingeniería en Computación, UNAM FES Aragón. Proyecto final de Programación Móvil 1.
+
+📖 **Explicación detallada del código (XML, controladores y modelo): [EXPLICACION.md](EXPLICACION.md)**
 
 Juego de memoria para Android (Java). El tablero tiene 12 cartas boca abajo (6 pares de animales). Tocas dos cartas: si son iguales se quedan descubiertas en verde, y si no, se vuelven a tapar después de un momento. Ganas cuando encuentras los 6 pares. Cada acción tiene su sonido.
 
@@ -11,7 +13,7 @@ Juego de memoria para Android (Java). El tablero tiene 12 cartas boca abajo (6 p
 | Fallar | `error.wav` (dos notas graves que bajan) | No son iguales |
 | Encontrar el último par | `victoria.wav` (arpegio) | ¡Ganaste en N intentos! |
 
-En pantalla también aparecen el nombre del alumno, el marcador (intentos y pares) y un botón **Reiniciar**.
+En pantalla también aparecen el nombre del alumno, el marcador (intentos y pares) y los botones **Reiniciar** y **Créditos**. Créditos abre otra pantalla con los nombres de los autores.
 
 ## Estructura
 
@@ -19,9 +21,11 @@ En pantalla también aparecen el nombre del alumno, el marcador (intentos y pare
 Memorama/
 ├── app/src/main/java/com/example/memorama/
 │   ├── Memorama.java        ← reglas del juego (Java puro, sin Android)
-│   └── MainActivity.java    ← pantalla: botones, colores, sonidos
+│   ├── MainActivity.java    ← pantalla del juego: botones, colores, sonidos
+│   └── CreditosActivity.java ← pantalla de créditos (botón Regresar)
 ├── app/src/main/res/
-│   ├── layout/activity_main.xml   ← título, nombre, marcador, tablero vacío, botón
+│   ├── layout/activity_main.xml     ← título, nombre, marcador, tablero vacío, botones
+│   ├── layout/activity_creditos.xml ← créditos con los nombres de los autores
 │   └── raw/*.wav                  ← los 4 sonidos
 ├── app/src/test/.../MemoramaTest.java  ← 6 pruebas JUnit de las reglas
 └── herramientas/generar_sonidos.py     ← crea los .wav por síntesis
