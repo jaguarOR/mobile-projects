@@ -1,0 +1,57 @@
+# Compila el Memorama en los servidores de GitHub (no hace falta Android Studio).
+# Resultado: el APK queda como "artifact" descargable en la pestaña Actions.
+name: Memorama APK
+
+on:
+  push:
+    paths:
+      - "Memorama/**"
+      - ".github/workflows/memorama.yml"
+  workflow_dispatch: # botón "Run workflow" para compilar a mano
+
+permissions:
+  contents: read
+
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Memorama
+
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Instalar Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Preparar Gradle (con caché)
+        uses: gradle/actions/setup-gradle@v4
+
+      # El nombre del alumno viene del secreto ALUMNO_NOMBRE (no está en el código).
+      # Si el secreto no existe, la app muestra "Tu nombre".
+      - name: Escribir local.properties
+        env:
+          ALUMNO_NOMBRE: ${{ secrets.ALUMNO_NOMBRE }}
+        run: |
+          echo "sdk.dir=$ANDROID_HOME" > local.properties
+          if [ -n "$ALUMNO_NOMBRE" ]; then
+            echo "alumno.nombre=$ALUMNO_NOMBRE" >> local.properties
+          fi
+
+      - name: Pruebas JUnit
+        run: ./gradlew testDebugUnitTest
+
+      - name: Compilar APK
+        run: ./gradlew assembleDebug
+
+      - name: Subir el APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: memorama-apk
+          path: Memorama/app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 7
