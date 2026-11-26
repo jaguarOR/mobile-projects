@@ -1,5 +1,7 @@
 # Memorama con sonidos
 
+Autor: **Ezequiel Olivera Reyes**, Ingeniería en Computación, UNAM FES Aragón. Proyecto final de Programación Móvil 1.
+
 Juego de memoria para Android (Java). El tablero tiene 12 cartas boca abajo (6 pares de animales). Tocas dos cartas: si son iguales se quedan descubiertas en verde, y si no, se vuelven a tapar después de un momento. Ganas cuando encuentras los 6 pares. Cada acción tiene su sonido.
 
 | Acción | Sonido | Mensaje |
@@ -87,22 +89,11 @@ El archivo [`.github/workflows/memorama.yml`](../.github/workflows/memorama.yml)
 1. descarga el código (`actions/checkout`);
 2. instala Java 21 (`actions/setup-java`);
 3. prepara Gradle con caché (`gradle/actions/setup-gradle`), así la segunda compilación es más rápida;
-4. escribe `local.properties` con la ruta del SDK y el nombre del alumno;
-5. corre las pruebas JUnit (si alguna falla, se detiene y no genera el APK);
-6. compila el APK con `./gradlew assembleDebug`;
-7. sube el APK como *artifact* llamado `memorama-apk` (se guarda 7 días).
+4. corre las pruebas JUnit (si alguna falla, se detiene y no genera el APK);
+5. compila el APK con `./gradlew assembleDebug`;
+6. sube el APK como *artifact* llamado `memorama-apk` (se guarda 7 días).
 
 Se ejecuta solo cuando haces `git push` con cambios en `Memorama/`, o a mano desde **Actions → Memorama APK → Run workflow**.
-
-### Poner tu nombre sin escribirlo en el código
-
-El repositorio es público, así que el nombre no va en el código. Se guarda como **secreto** de GitHub:
-
-1. En GitHub: **Settings → Secrets and variables → Actions → New repository secret**.
-2. Nombre: `ALUMNO_NOMBRE`. Valor: tu nombre completo.
-3. Vuelve a ejecutar el workflow.
-
-Si no creas el secreto, la app muestra "Tu nombre". Aviso: en un repositorio público, cualquier persona con cuenta de GitHub puede descargar el artifact, y el APK lleva el nombre dentro. Por eso solo se guarda 7 días. Si no quieres eso, compila el APK de la entrega en tu computadora (siguiente sección).
 
 ### Descargar e instalar el APK en el teléfono
 
@@ -122,7 +113,7 @@ source ../entorno.sh
 ./gradlew installDebug        # instala en el teléfono conectado por USB
 ```
 
-El nombre se lee de `local.properties` (no se sube a git): `alumno.nombre=Tu Nombre`.
+El nombre del autor está en `app/build.gradle`; para otro nombre, agrega `alumno.nombre=Otro Nombre` a `local.properties`.
 
 ## Posibles mejoras
 

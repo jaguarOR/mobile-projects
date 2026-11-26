@@ -1,6 +1,6 @@
 # mobile-projects
 
-Aplicaciones Android en Java de la materia Programación Móvil 1 (Ingeniería en Computación, UNAM). Las primeras apps construyen la interfaz en código con `Activity` y `LinearLayout`; desde `CaraDePapa` se usan layouts XML, como en los ejemplos de clase.
+Aplicaciones Android en Java de la materia Programación Móvil 1 (Ingeniería en Computación, UNAM FES Aragón), por **Ezequiel Olivera Reyes**. Las primeras apps construyen la interfaz en código con `Activity` y `LinearLayout`; desde `CaraDePapa` se usan layouts XML, como en los ejemplos de clase.
 
 | Proyecto | Qué hace |
 |---|---|
@@ -22,12 +22,12 @@ cd Calculadora
 ./gradlew installDebug         # instala en un teléfono conectado por USB
 ```
 
-## Nombre del autor
+## Autor
 
-El nombre que muestran las apps no está en el código: se lee de `local.properties` (que no se sube al repositorio) al compilar. Agrega esta línea en el `local.properties` de cada proyecto:
+**Ezequiel Olivera Reyes**, Ingeniería en Computación, UNAM FES Aragón.
+
+Todas las apps muestran el nombre del autor en pantalla. Para compilar una copia con otro nombre, agrega esta línea al `local.properties` del proyecto (ese archivo no se sube al repositorio):
 
 ```properties
-alumno.nombre=Tu Nombre
+alumno.nombre=Otro Nombre
 ```
-
-Si falta, las apps muestran "Tu nombre".

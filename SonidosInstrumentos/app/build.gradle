@@ -2,13 +2,13 @@ plugins {
     id 'com.android.application'
 }
 
-// El nombre del alumno se lee de local.properties (no se sube a git): alumno.nombre=Tu Nombre
+// Nombre del autor que muestra la app. Se puede cambiar en local.properties: alumno.nombre=Otro Nombre
 def localProps = new Properties()
 def localFile = rootProject.file('local.properties')
 if (localFile.exists()) {
     localFile.withReader('UTF-8') { localProps.load(it) }
 }
-def alumno = localProps.getProperty('alumno.nombre', 'Tu nombre')
+def alumno = localProps.getProperty('alumno.nombre', 'Ezequiel Olivera Reyes')
 
 android {
     namespace 'com.example.sonidos'
